@@ -8,7 +8,9 @@
 
 \subsection{命途}
 
-本作包含18种不同的命途，每个命途都代表了一种信念和力量，其中7种被设定为游戏中的角色职业。每个星神与其命途之间存在一种相互依存的关系。星神可以搬运命途上的能量，但同时也被命途所束缚。一旦命途开启，就无法关闭，即使星神陨落，命途仍然存在。目前已知的18位星神中，有一些已经陨落或失踪。
+本作包含18种不同的命途，每个命途都代表了一种信念和力量，其中7种被设定为游戏中的角色职业。每个星神与其命途之间存在一种相互依存的关系。星神可以搬运命途上的能量，但同时也被命途所束缚。一旦命途开启，就无法关闭，即使星神陨落，命途仍然存在。目前已知的18位星神中，有一些已经陨落或失踪。黑塔等人对虚数能量在命途传导中的衰减现象进行了系统研究\cite{exampleid2}，三月七则从哲学角度梳理了星神与命途的关系\cite{exampleid3}。
+
+由文献\inlinecite{exampleid5,exampleid7}可知，命途能量传输与强化学习在回合制战斗中的应用已成为近年学界关注的热点。
 
 游戏中的故事情节涉及到不同命途的星神和他们的信念。例如，阿基维利是一个开拓命途的星神，他铺下了星海中的轨道，使得人们可以利用星神的力量进行星际旅行。纳努克则代表了毁灭命途，他认为文明是宇宙的癌症，并散播灾祸的源头到世界各地。还有一些星神代表着不同的命途，如存护命途、欢愉命途、巡猎命途、智识命途、神秘命途、同谐命途等。每个命途都有自己的派系和信徒，这些组织根据对星神和命途的不同理解和信念而形成。派系之间常常结盟或敌对，但多数星神对这些凡人组织并不关心。在游戏中，代表不同命途的派系有毁灭命途的反物质军团、巡猎命途的仙舟联盟和巡海游侠等。此外，还有一些与星神有关的角色，如令使和命途行者。令使是由星神直接赋予力量的凡人，而命途行者则受到星神的感召，走在对应的命途上，并从中获得力量和恩赐。
 
@@ -30,6 +32,213 @@
 
 \subsection{玩法}
 
-《崩坏：星穹铁道》是一款战略角色扮演游戏，游戏并非开放世界，而是采用箱庭探索式的地图，以星球作为章节区域。世界各地存在多个“界域定锚”，可供玩家用于快速旅行。玩家跟随游戏主线前往不同的地方，还有机关解密及支线任务等内容。世界各地分布着奖励高价值资源的关卡，此类资源可以用于强化角色和购买道具，但需要消耗名为“开拓力”的体力才可进入，体力会随时间推移而缓慢回复。另有名为“模拟宇宙”的Roguelike玩法可获得高级物资。通过完成某些任务或参加特定的限时活动，玩家可解锁一些可玩角色，但大多数角色都需通过名为“跃迁”的抽卡系统获得。游戏设有保底系统，玩家在抽取一定次数后必定获得稀有角色。
+《崩坏：星穹铁道》是一款战略角色扮演游戏，游戏并非开放世界，而是采用箱庭探索式的地图，以星球作为章节区域。
+世界各地存在多个“界域定锚”，可供玩家用于快速旅行。玩家跟随游戏主线前往不同的地方，还有机关解密及支线任务等内容。
+世界各地分布着奖励高价值资源的关卡，此类资源可以用于强化角色和购买道具，但需要消耗名为“开拓力”的体力才可进入，
+体力会随时间推移而缓慢回复。另有名为“模拟宇宙”的Roguelike玩法可获得高级物资。
+通过完成某些任务或参加特定的限时活动，玩家可解锁一些可玩角色，但大多数角色都需通过名为“跃迁”的抽卡系统获得。
+游戏设有保底系统，玩家在抽取一定次数后必定获得稀有角色。关于抽卡机制的概率模型与玩家留存之间的关系，
+Johnson 和 Chen 在抽卡游戏行为分析领域已取得奠基性成果\cite{exampleid6}。
+此外，由文献\inlinecite{exampleid4,exampleid5,exampleid6}可知，从星核裂界模拟到命途能量传输再到抽卡机制，
+星穹铁道的学术研究已覆盖多个方向。
 
-战斗模式为回合制，每个队伍可包含四名角色。每个角色都有一种“命途”和元素属性，命途相当于角色职业，分为七种：输出型的智识命途、巡猎命途、毁灭命途，辅助型的虚无命途、存护命途、同谐命途，以及用于治愈的丰饶命途；元素属性则分为七种：物理、火、冰、雷、风、量子、虚数。每个敌人都有一种或多种元素属性作为其“弱点”，使用其弱点属性攻击可降低敌人的“韧性”，韧性耗尽后将对敌人造成“弱点击破”效果，使敌人受到额外伤害并遭受减益，一回合后恢复韧性值。每个角色可在战斗中使用两种技能：“战技”和“终结技”。战技需要消耗“战技点”释放，发动普通攻击可获得战技点；终结技则是需要清空能量才能使用的绝招，普通攻击和战技均可累积能量。
+战斗模式为回合制，每个队伍可包含四名角色。每个角色都有一种“命途”和元素属性，
+命途相当于角色职业，分为七种：输出型的智识命途、巡猎命途、毁灭命途，辅助型的虚无命途、存护命途、同谐命途，
+以及用于治愈的丰饶命途；元素属性则分为七种：物理、火、冰、雷、风、量子、虚数。
+每个敌人都有一种或多种元素属性作为其“弱点”，使用其弱点属性攻击可降低敌人的”韧性”，
+韧性耗尽后将对敌人造成”弱点击破”效果，使敌人受到额外伤害并遭受减益，一回合后恢复韧性值。
+每个角色可在战斗中使用两种技能：”战技”和”终结技”。战技需要消耗”战技点”释放，发动普通攻击可获得战技点；
+终结技则是需要清空能量才能使用的绝招，普通攻击和战技均可累积能量。
+
+\subsection{命途的形式化建模}
+
+\begin{definition}[命途]
+    设 $\Sigma$ 为所有星神的集合。对任意星神 $\sigma \in \Sigma$，其命途 $P_\sigma$ 定义为 $\sigma$ 所践行信念 $\mathscr{B}_\sigma$ 在虚数空间上的投影：
+    \begin{equation}
+        P_\sigma = \Pi_{\text{虚数}}(\mathscr{B}_\sigma) \neq \varnothing.
+    \end{equation}
+    命途一旦开启，其虚数能量流 $\Phi(P_\sigma) > 0$ 恒成立。
+\end{definition}
+
+\begin{axiom}[命途不可逆公理]
+    设星神 $\sigma$ 开启命途 $P$，则对任意时刻 $t \geq t_{\text{开启}}$，有
+    \begin{equation}
+        \Phi_t(P) > 0,\quad \text{即使 } \sigma \text{ 已于时刻 } \tau < t \text{ 陨落},
+    \end{equation}
+    即命途一旦开启便永不关闭，与开启者存亡无关。
+\end{axiom}
+
+\begin{theorem}[命途残留定理]
+    若星神 $\sigma$ 在时刻 $\tau$ 陨落，则其命途 $P_\sigma$ 上的虚数能量流满足
+    \begin{equation}
+        \lim_{t \to \infty} \Phi_t(P_\sigma) = \Phi_\tau(P_\sigma) \cdot e^{-\lambda(t - \tau)},
+    \end{equation}
+    其中 $\lambda \in (0, 1)$ 为星神信念衰减系数。特别地，当追随派系持续践行该命途时，$\lambda \to 0$。
+\end{theorem}
+
+\begin{lemma}[虚数能量叠加原理]
+    令 $\mathcal{P}_{\text{开拓}}$ 为开拓命途，其虚数能量可在星轨上叠加传递。设星穹列车沿星轨 $L$ 行驶，则列车所经之处的虚数能量密度 $\rho$ 满足
+    \begin{equation}
+        \rho(x) = \int_L G(x - y) \cdot \Phi(\mathcal{P}_{\text{开拓}}) \,\mathrm{d}y,
+    \end{equation}
+    其中 $G(x - y)$ 为星轨传播核，由已故星神阿基维利铺设。
+\end{lemma}
+
+\begin{definition}[格式（星核记录规范）]
+    星核的记录应遵循三要素：
+    \begin{enumerate}
+        \item \textbf{投放星神}：记录投放该星核的星神名称（通常为纳努克）；
+        \item \textbf{裂界规模}：以标准星里（standard stellar mile, SSM）为单位记录裂界半径 $R_{\text{裂}}$；
+        \item \textbf{星核猎手介入记录}：若已被回收，注明回收者及回收日期。
+    \end{enumerate}
+    推荐格式：\texttt{\{[星神]\}\{[裂界半径]\}\{[回收状态]\}}。
+\end{definition}
+
+\begin{breakablealgorithm}
+    \caption{跃迁保底计数}
+    \label{alg:pity}
+    \begin{algorithmic}[1]
+        \Require 跃迁次数 $n$，保底阈值 $P_{\max}$，五星基础概率 $\varepsilon$
+        \Ensure 是否触发保底及本次跃迁稀有度
+        \State 初始化保底计数器 $c \gets n$
+        \For{$i \gets 1$ \textbf{to} $10$}
+            \If{$c \geq P_{\max}$}
+                \State \Return 触发保底，获得五星角色/光锥
+            \Else
+                \State 生成本次跃迁稀有度：$r \sim \text{Bernoulli}(\varepsilon)$
+                \If{$r = 1$}
+                    \State $c \gets 0$ \Comment{抽到五星，计数器归零}
+                    \State \Return 不触发保底，获得五星
+                \Else
+                    \State $c \gets c + 1$ \Comment{未抽到五星，计数器递增}
+                \EndIf
+            \EndIf
+        \EndFor
+        \State \Return 未获得五星，保底计数器为 $c$
+    \end{algorithmic}
+\end{breakablealgorithm}
+
+\begin{breakablealgorithm}
+    \caption{弱点击破韧性判定}
+    \label{alg:break}
+    \begin{algorithmic}[1]
+        \Require 敌人韧性值 $T$，攻击属性集合 $\mathcal{A} = \{a_1, a_2, \ldots, a_k\}$，敌人弱点集合 $\mathcal{W}$
+        \Ensure 剩余韧性值 $T'$ 及是否触发弱点击破
+        \State 初始化伤害累计 $D \gets 0$
+        \For{每个攻击属性 $a_j \in \mathcal{A}$}
+            \If{$a_j \in \mathcal{W}$}
+                \State $d_j \gets \Call{CalcToughnessDMG}{a_j}$ \Comment{弱点属性：全额削韧}
+            \Else
+                \State $d_j \gets 0$ \Comment{非弱点属性：不削韧}
+            \EndIf
+            \State $D \gets D + d_j$
+        \EndFor
+        \State $T' \gets T - D$
+        \If{$T' \leq 0$}
+            \State \Return 触发弱点击破，施加对应属性减益
+        \Else
+            \State \Return 未击破，剩余韧性 $T'$
+        \EndIf
+    \end{algorithmic}
+\end{breakablealgorithm}
+
+\newpage
+\noindent 
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+
+\englishSpacing
+\noindent
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+Aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq\\
+aaaaabbbbbcccccdddddeeeeefffffggggghhhhhiiiiijjjjjkkkkklllllmmmmmnnnnnooooopppppqq
+\chineseSpacing
+
+\noindent 
+一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一
+一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一一

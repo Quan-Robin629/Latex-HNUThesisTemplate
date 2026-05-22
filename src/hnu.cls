@@ -19,6 +19,25 @@
 % 行间距为1.5倍行距(1.5 * 1.2(latex默认) ÷ 1.3(word默认))
 \linespread{1.625}
 
+% 英文行距（1.5 × 1.15 ÷ 1.2 = 1.4375，基线距 20.7bp）
+\newcommand{\englishSpacing}{%
+  \par
+  \baselineskip=20.7bp
+  \lineskiplimit=-\maxdimen
+}
+
+% 恢复中文行距
+\newcommand{\chineseSpacing}{%
+  \par
+  \zihao{-4}%
+}
+
+% 公式与段落间距与1.5倍行距一致
+\setlength{\abovedisplayskip}{20pt plus 5pt minus 9pt}
+\setlength{\belowdisplayskip}{20pt plus 5pt minus 9pt}
+\setlength{\abovedisplayshortskip}{0pt plus 5pt}
+\setlength{\belowdisplayshortskip}{12pt plus 4pt minus 6pt}
+
 % 默认中文字体：宋体, 英文字体：Times New Roman
 \setmainfont[Path=fonts/]{mTimesNewRoman.ttf}
 \setCJKmainfont[Path=fonts/]{mSimsun.ttc}
@@ -78,6 +97,7 @@
 % 英文摘要预定义格式
 \newenvironment{abstractENG}{
     \newpage
+    \linespread{1.4375}\selectfont
     \phantomsection\addcontentsline{toc}{chapter}{A\hspace{0.1em}b\hspace{0.1em}s\hspace{0.1em}t\hspace{0.1em}r\hspace{0.1em}a\hspace{0.1em}c\hspace{0.1em}t}
     \begin{center}
         \fontTimesNewRomanBold\sizeThreel{
@@ -104,8 +124,8 @@
 % “节”、“条”的段前、段后各设为0.5行
 \RequirePackage{titlesec}
 % Chapter格式
-\titleformat{\chapter}{\fontTimesNewRomanBold\fontSimhei\sizeThree}{\thechapter}{1em}{}
-\titlespacing{\chapter}{0pt}{0pt}{2pt}
+\titleformat{\chapter}{\centering\fontTimesNewRomanBold\fontSimhei\sizeThree}{\thechapter}{1em}{}
+\titlespacing{\chapter}{0pt}{-10pt}{2pt}
 % Section格式
 \titleformat{\section}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesection}{1em}{}
 \titlespacing{\section}{0pt}{7.5pt}{7.5pt}
@@ -141,6 +161,14 @@
 
 % 参考文献以上标形式置于所引用内容最末句的右上角
 \renewcommand{\@cite}[1]{\textsuperscript{\,[#1]}}
+
+% 正文中直接提及时用内联引用（与正文排齐，非上标）
+\newcommand{\inlinecite}[1]{%
+    \begingroup
+    \renewcommand{\@cite}[1]{[##1]}%
+    \cite{#1}%
+    \endgroup
+}
 
 % 代码块预定义格式
 \RequirePackage{listings}

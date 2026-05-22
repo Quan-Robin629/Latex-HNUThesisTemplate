@@ -3,6 +3,14 @@
 
 % Packages
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{algorithm}
+\makeatletter
+\renewcommand{\ALG@name}{算法}
+\makeatother
+\usepackage{algpseudocode}
 \usepackage{graphicx}
 \usepackage{overpic}
 \usepackage{fontspec}
@@ -12,6 +20,42 @@
 \usepackage{pkgs/tocloflot}
 \usepackage{pkgs/bibliography}
 \usepackage{pkgs/appendix}
+
+% 定理环境样式（小四宋体加粗标题，按章编号，2em缩进）
+\newtheoremstyle{hnustyle}
+    {0.5\baselineskip}            % 段前间距（1.5倍行距整行）
+    {0.5\baselineskip}            % 段后间距（1.5倍行距整行）
+    {\fontSimsun}            % 正文字体（宋体）
+    {2em}                    % 缩进
+    {\fontSimsunBold\sizeFourl}  % 标题字体（小四宋体加粗）
+    {}                       % 标题后标点
+    {0.5em}                  % 标题与正文间距
+    {}
+\theoremstyle{hnustyle}
+\newtheorem{theorem}{定理}[chapter]
+\newtheorem{definition}{定义}[chapter]
+\newtheorem{lemma}{引理}[chapter]
+\newtheorem{axiom}{公理}[chapter]
+
+% 这部分为解决算法环境跨页问题的代码，定义了一个新的算法环境breakablealgorithm，可以在算法较长时自动分页。
+\makeatletter
+\newenvironment{breakablealgorithm}
+{% \begin{breakablealgorithm}
+\begin{center}
+    \refstepcounter{algorithm}% 算法计数器自增
+    \hrule height.8pt depth0pt \kern2pt% 上横线
+    \renewcommand{\caption}[2][\relax]{% 重定义caption命令
+    {\raggedright\textbf{\ALG@name~\thealgorithm} ##2\par}%
+    \ifx\relax##1\relax % 无短标题
+        \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##2}%
+    \else % 有短标题
+        \addcontentsline{loa}{algorithm}{\protect\numberline{\thealgorithm}##1}%
+    \fi
+    \kern2pt\hrule\kern2pt
+    } }{% \end{breakablealgorithm}
+    \kern2pt\hrule\relax% 下横线
+\end{center} }
+\makeatother
 
 % Document
 \begin{document}

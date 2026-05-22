@@ -5,6 +5,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{enumitem}
 \usepackage{mathrsfs}
 \usepackage{algorithm}
 \makeatletter
@@ -23,9 +24,9 @@
 
 % 定理环境样式（小四宋体加粗标题，按章编号，2em缩进）
 \newtheoremstyle{hnustyle}
-    {0.5\baselineskip}            % 段前间距（1.5倍行距整行）
-    {0.5\baselineskip}            % 段后间距（1.5倍行距整行）
-    {\fontSimsun}            % 正文字体（宋体）
+    {0pt}                        % 段前间距
+    {0pt}                        % 段后间距
+    {\fontSimsun\sizeFourl}    % 正文字体（小四宋体）
     {2em}                    % 缩进
     {\fontSimsunBold\sizeFourl}  % 标题字体（小四宋体加粗）
     {}                       % 标题后标点

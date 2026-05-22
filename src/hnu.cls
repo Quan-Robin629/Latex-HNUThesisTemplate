@@ -32,12 +32,6 @@
   \zihao{-4}%
 }
 
-% 公式与段落间距与1.5倍行距一致
-\setlength{\abovedisplayskip}{20pt plus 5pt minus 9pt}
-\setlength{\belowdisplayskip}{20pt plus 5pt minus 9pt}
-\setlength{\abovedisplayshortskip}{0pt plus 5pt}
-\setlength{\belowdisplayshortskip}{12pt plus 4pt minus 6pt}
-
 % 默认中文字体：宋体, 英文字体：Times New Roman
 \setmainfont[Path=fonts/]{mTimesNewRoman.ttf}
 \setCJKmainfont[Path=fonts/]{mSimsun.ttc}

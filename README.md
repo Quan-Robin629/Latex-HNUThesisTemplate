@@ -72,7 +72,7 @@
 
 ## 使用
 ### Overleaf（推荐）
-1. 下载[Releases](https://github.com/Quan-Robin629/Latex-HNUThesisTemplate/releases/)中的`Source code(zip)`
+1. 下载[Releases](https://github.com/Quan-Robin629/Latex-HNUThesisTemplate/releases/)中的`Latex-HNUThesisTemplate.zip`
 2. 登录至[Overleaf主页](https://www.overleaf.com/project)
 3. 左侧**New Project - Upload Project**，导入下载的`zip`压缩包
 4. 上传成功后会自动进入工程页面，点击左侧**Menu - Compiler**，选择`XeLaTeX`，重新编译即可。

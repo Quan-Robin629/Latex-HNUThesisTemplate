@@ -45,7 +45,7 @@
     \hrule height 0.7pt width\headwidth
 }
 \fancyhead[C]{
-    \sizeFivel \fontSimsun 湖南大学本科生毕业论文（设计）
+    \sizeFivel \fontSimsun 湖南大学本科生毕业论文
 }
 \fancyhead[L]{}
 \fancyhead[R]{}
@@ -67,25 +67,25 @@
     \newpage
     \phantomsection\addcontentsline{toc}{chapter}{摘~~要}
     \begin{center}
-        \fontSimhei\sizeThreel{
+        \fontSimhei\zihao{-3}{
             \thesisTitle
 
 
-            \vspace{1.5cm}
+            \vspace{0.70cm}
         }
 
-        \fontSimhei\sizeThree{
+        \fontSimhei\zihao{3}{
                 {摘~~~~~~~~要}
         }
     \end{center}
 
-    \vspace{0.5cm}
+    \vspace{0.20cm}
     }{}
 
 % 中文关键词预定义格式
 \newcommand\keywordsCN{
-    \vspace{0.75cm}
-    \raggedright\fontSimhei\sizeFour 关键词：\fontSimhei\sizeFourl
+    \vspace{0.65cm}
+    \raggedright\fontSimhei\zihao{4} 关键词：\fontSimhei\zihao{-4}
 }
 
 % 英文摘要预定义格式
@@ -94,40 +94,40 @@
     \linespread{1.4375}\selectfont
     \phantomsection\addcontentsline{toc}{chapter}{A\hspace{0.1em}b\hspace{0.1em}s\hspace{0.1em}t\hspace{0.1em}r\hspace{0.1em}a\hspace{0.1em}c\hspace{0.1em}t}
     \begin{center}
-        \fontTimesNewRomanBold\sizeThreel{
+        \fontTimesNewRomanBold\zihao{-3}{
             \thesisTitleENG
         }
 
-        \vspace{1.5cm}
+        \vspace{0.85cm}
 
-        \fontTimesNewRomanBold\sizeThree{
+        \fontTimesNewRomanBold\zihao{3}{
             Abstract
         }
     \end{center}
 
-    \vspace{0.5cm}
+    \vspace{0.3cm}
     }{}
 
 % 英文关键词预定义格式
 \newcommand\keywordsENG{
     \vspace{0.75cm}
-    \raggedright\fontTimesNewRomanBold\sizeFour Keywords: \fontTimesNewRomanBold\sizeFourl
+    \raggedright\fontTimesNewRomanBold\zihao{4} Keywords: \fontTimesNewRomanBold\zihao{-4}
 }
 
 % 章（如“1”）、节（如“1.1”）、条（如“1.1.1”）、款（如“1.”）、项（如“（1）”）
 % “节”、“条”的段前、段后各设为0.5行
 \RequirePackage{titlesec}
 % Chapter格式
-\titleformat{\chapter}{\centering\fontTimesNewRomanBold\fontSimhei\sizeThree}{\thechapter}{1em}{}
+\titleformat{\chapter}{\centering\fontTimesNewRomanBold\fontSimhei\zihao{3}}{\thechapter}{1em}{}
 \titlespacing{\chapter}{0pt}{-10pt}{2pt}
 % Section格式
-\titleformat{\section}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesection}{1em}{}
+\titleformat{\section}{\fontTimesNewRoman\fontSimhei\zihao{-4}}{\thesection}{1em}{}
 \titlespacing{\section}{0pt}{7.5pt}{7.5pt}
 % Subsection格式
-\titleformat{\subsection}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesubsection}{1em}{}
+\titleformat{\subsection}{\fontTimesNewRoman\fontSimhei\zihao{-4}}{\thesubsection}{1em}{}
 \titlespacing{\subsection}{0pt}{7.5pt}{7.5pt}
 % Subsubsection格式
-\titleformat{\subsubsection}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesubsubsection}{1em}{}
+\titleformat{\subsubsection}{\fontTimesNewRoman\fontSimhei\zihao{-4}}{\thesubsubsection}{1em}{}
 \titlespacing{\subsubsection}{0pt}{7.5pt}{7.5pt}
 
 % 致谢预定义格式
@@ -135,7 +135,7 @@
     \clearpage
     \phantomsection\addcontentsline{toc}{chapter}{致~谢}
     \begin{center}
-        \fontSimhei\sizeThree 致~谢
+        \fontSimhei\zihao{3} 致~谢
     \end{center}
 
 

@@ -5,7 +5,7 @@
 # 湖南大学数学学院本科毕业论文LaTeX模板
 [![License](https://img.shields.io/github/license/Quan-Robin629/Latex-HNUThesisTemplate?color=ff69b4)](./LICENSE)
 
-> 本模板基于 [XayahSuSuSuSu/Latex-HNUThesisTemplate]([https://github.com/XayahSuSuSuSu/Latex-HNUThesisTemplate](https://github.com/XayahSuSuSu/Latex-HNUThesisTemplate)) 修改，遵循 Apache-2.0 协议。
+> 本模板基于 [XayahSuSuSuSu/Latex-HNUThesisTemplate](https://github.com/XayahSuSuSu/Latex-HNUThesisTemplate) 修改，遵循 Apache-2.0 协议。
 
 ## 修改内容
 
